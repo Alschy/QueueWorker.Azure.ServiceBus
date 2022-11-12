@@ -12,6 +12,7 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <RepositoryType>git</RepositoryType>
+    <PackageTags>Azure;ServiceBus;Service Bus;Messaging;C#;HostedService;</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
