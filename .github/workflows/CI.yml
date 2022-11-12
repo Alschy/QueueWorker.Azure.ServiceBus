@@ -20,5 +20,7 @@ jobs:
           dotnet-version: 6.0.x
       - name: Restore
         run: dotnet restore $projectPath -v d
-      - name: Build
-        run: dotnet build $projectPath -c Release
+#      - name: Build
+#        run: dotnet build $projectPath -c Release
+      - name: Pack
+        run: dotnet pack $projectPath -c Release --no-restore
