@@ -18,7 +18,9 @@ jobs:
         uses: actions/setup-dotnet@v3
         with: 
           dotnet-version: 6.0.x
+      - name: Set nuget.org
+        run: dotnet nuget add source https://api.nuget.org/v3/index.json --name nuget.org
       - name: Restore
-        run: dotnet restore $slnPath -v n
+        run: dotnet restore $projectPath -v n
       - name: Build
-        run: dotnet build $slnPath -c Release --no-restore
+        run: dotnet build $projectPath -c Release
