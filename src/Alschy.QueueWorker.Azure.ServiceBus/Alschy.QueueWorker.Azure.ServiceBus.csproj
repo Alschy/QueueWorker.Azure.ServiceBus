@@ -4,7 +4,22 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Authors>Alschy</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/Alschy/QueueWorker.Azure.ServiceBus</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Alschy/QueueWorker.Azure.ServiceBus</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.11.1" />
