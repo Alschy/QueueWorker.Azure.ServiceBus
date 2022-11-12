@@ -21,4 +21,4 @@ jobs:
       - name: Restore
         run: dotnet restore $slnPath -v n
       - name: Build
-        run: dotnet build $projectPath -c Release --no-restore
+        run: dotnet build $slnPath -c Release --no-restore
