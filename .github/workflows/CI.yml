@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       projectPath: "src/Alschy.QueueWorker.Azure.ServiceBus/Alschy.QueueWorker.Azure.ServiceBus.csproj"
+      slnPath:  "src/Alschy.QueueWorker.Azure.ServiceBus/Alschy.QueueWorker.Azure.ServiceBus.sln"
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -18,6 +19,6 @@ jobs:
         with: 
           dotnet-version: 6.0.x
       - name: Restore
-        run: dotnet restore $projectPath -v d
+        run: dotnet restore $slnPath -v n
       - name: Build
         run: dotnet build $projectPath -c Release --no-restore
