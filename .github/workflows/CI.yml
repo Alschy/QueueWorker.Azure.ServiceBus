@@ -20,4 +20,4 @@ jobs:
       #- name: Restore
       #  run: dotnet restore $projectPath
       - name: Build
-        run: dotnet build $projectPath -c Release
+        run: dotnet build $projectPath -c Release -v diag
