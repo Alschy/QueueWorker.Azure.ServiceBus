@@ -19,4 +19,4 @@ jobs:
       - name: Pack
         run: dotnet pack $projectPath -c Release --no-restore -o $output
       - name: Push
-        run: dotnet nuget push $output --api-key ${secrets.NUGET_API_KEY}
+        run: dotnet nuget push $output --api-key ${{ secrets.NUGET_API_KEY }}
